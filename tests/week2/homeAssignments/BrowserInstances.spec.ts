@@ -15,8 +15,8 @@ test('Launch Edge & Webkit Browser', async () => {
 
     let edgePageTitle = await edgepage.title()
     let webKitPageTitle = await webKitPage.title()
-    let edgePageURL = await edgepage.url()
-    let webKitPageURL = await webKitPage.url()
+    let edgePageURL = edgepage.url() //await is not required for URL
+    let webKitPageURL = webKitPage.url()
 
     console.log("edpgePageTitle: " + edgePageTitle)
     console.log("webKitPageTitle: " + webKitPageTitle)
