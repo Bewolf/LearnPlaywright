@@ -1,0 +1,23 @@
+install TS:
+*Globally 
+npm install -g typescript 
+=============================================
+*Locally
+npm install typescript __save-dev
+=============================================
+check version
+-> tsc --version or tsc -v
+===============================================
+save the file  javascript -> .js
+
+
+save the file typescript -> .ts
+
+convert your ts code to js code
+cmd -> tsc filename.ts (file convert as .js)
+
+
+it covert into js code
+
+
+cmd -> node filename.js(output)

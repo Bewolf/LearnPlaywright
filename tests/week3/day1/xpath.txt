@@ -1,0 +1,16 @@
+classroom:
+https://www.snapdeal.com/ 
+-> search box -> GP to GC
+-> Mobile Accessories -> Parent to child
+//div/descendant::input[@id='search-box-input']
+//div[@id='tab-category-6']/div[text()='Mobile Accessories']
+
+
+
+
+https://login.salesforce.com/?locale=in
+Login button -> Elder sibling to younger sibling
+Password -> Elder cousin to younger cousi
+
+//div[@id='pwcaps']/following-sibling::input
+//div[@id='chooser_error']/following::input[@id='password']
