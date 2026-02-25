@@ -3,8 +3,10 @@ import test, { chromium, expect } from "@playwright/test";
 test('Login only using css selectors', async ({ page }) => {
 
     await page.goto("https://login.salesforce.com/");
-    await page.locator("#username").fill("dilipkumar.rajendran@testleaf.com")
-    await page.locator("#password").last().fill("TestLeaf@2025")
+    await page.getByLabel('Username').fill("dilipkumar.rajendran@testleaf.com")
+    await page.getByLabel("password").last().fill("TestLeaf@2025")
+    //await page.locator("#username").fill("dilipkumar.rajendran@testleaf.com")
+    //await page.locator("#password").last().fill("TestLeaf@2025")
     await page.locator("#Login").click()
     await page.waitForTimeout(3000)
     const title = await page.title();
